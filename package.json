@@ -1,0 +1,29 @@
+{
+  "name": "MGC",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrgonzzo/MGC.git"
+  },
+  "author": "mrgonzzo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrgonzzo/MGC/issues"
+  },
+  "homepage": "https://github.com/mrgonzzo/MGC#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1"
+  },
+  "dependencies": {
+    "angular-ui-router": "^0.4.2",
+    "bootstrap": "^3.3.7",
+    "normalize.css": "^7.0.0"
+  }
+}
