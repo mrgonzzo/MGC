@@ -1,0 +1,54 @@
+body {background-color:darkslategray;}
+
+.aboutus{
+    font-size: 18px;; 
+}
+.deck{
+    width: 570px;
+   
+    margin: 0 auto;
+}
+.face .backed{
+    visibility: visible;
+}
+.solve{
+    visibility: hidden;
+}
+.card{
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+.count{
+    height: 40px;
+    width: 100px;
+    padding-top:10px;
+    padding-bottom:25px;
+    float: left;
+    }
+.counter{
+    height: 40px;
+     width:250px;
+}
+.ok{
+    background-color: green;
+   }
+.ko{
+    background-color: red;
+   }
+.js_class_ko{
+    border-color: red;
+}
+.js_class_ok{
+    border-color: green;
+}
+.js_text_ok{
+    color: green;
+}
+.js_text_ko{
+    color: red;
+}
+
+
+	  
