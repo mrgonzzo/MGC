@@ -14,6 +14,10 @@
             applause.play();
         };
         module.playClocksound = function () {
+            if (!clocksound.paused) {
+               clocksound.pause();
+                clocksound.currentTime=0;
+            }
             clocksound.play();
             clocksound.loop = true;
         };
