@@ -4,7 +4,7 @@ body {background-color:darkslategray;}
     font-size: 18px;; 
 }
 .deck{
-    width: 570px;
+    /*width: 28%;*/
    
     margin: 0 auto;
 }
@@ -16,20 +16,64 @@ body {background-color:darkslategray;}
 }
 .card{
     float: left;
-    margin-left: 10px;
-    margin-bottom: 7px;
+    margin: 0 auto;
+}
+.picture{
+    /* width:100%;*/
+    max-width:100%;
+}
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	/*margin: 0;*/
+    margin-left: auto;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 75%;
+}
+.span_2_of_4 {
+	width: 50%;
+}
+.span_1_of_4 {
+	width: 25%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 0; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
 }
 
 .count{
-    height: 40px;
-    width: 100px;
-    padding-top:10px;
-    padding-bottom:25px;
+    height: 10%;
+    width: 50%;
+    padding-top:5%;
+    padding-bottom:5%;
     float: left;
     }
 .counter{
-    height: 40px;
-     width:250px;
+    height: 10%;
+     width:20%;
 }
 .ok{
     background-color: green;

@@ -3,15 +3,17 @@
     function cardFactory() {
         var module = {};
         var self = module;
+        var deck = [];
+        var deckRow = new Array(4);
         var cardarray = [
-            { id: 1,part: 'a', picture: "1.png", stat: 'faced', isDisable: 'true' },
-            { id: 2,part: 'a', picture: "2.png", stat: 'faced', isDisable: 'true' },
-            { id: 3,part: 'a', picture: "3.png", stat: 'faced', isDisable: 'true' },
-            { id: 4,part: 'a', picture: "4.png", stat: 'faced', isDisable: 'true' },
-            { id: 5,part: 'a', picture: "5.png", stat: 'faced', isDisable: 'true' },
-            { id: 6,part: 'a', picture: "6.png", stat: 'faced', isDisable: 'true' }
+            { id: 1, part: 'a', picture: "1.png", stat: 'faced', isDisable: 'true' },
+            { id: 2, part: 'a', picture: "2.png", stat: 'faced', isDisable: 'true' },
+            { id: 3, part: 'a', picture: "3.png", stat: 'faced', isDisable: 'true' },
+            { id: 4, part: 'a', picture: "4.png", stat: 'faced', isDisable: 'true' },
+            { id: 5, part: 'a', picture: "5.png", stat: 'faced', isDisable: 'true' },
+            { id: 6, part: 'a', picture: "6.png", stat: 'faced', isDisable: 'true' }
         ];
-        var turn = ['f','f'];
+        var turn = ['f', 'f'];
         // -> Fisher–Yates shuffle algorithm
         var shuffleArray = function (deckarray) {
             var m = deckarray.length, t, i;
@@ -40,14 +42,27 @@
         };
         var pararray = linkcard(cardarray);
         cardarray.push.apply(cardarray, pararray);
+
         module.getDeck = function () {
+            var k = 0;
             shuffleArray(cardarray);
-            return cardarray;
+            for (var i = 0; i < 3; i++) {
+                deck[i] = [];
+                for (var j = 0; j < 4; j++) {
+                    deck[i].push(cardarray[k]);
+                    k = k + 1;
+                  
+                }
+             
+            }
+           
+            return deck;
         };
         module.getTurn = function () {
-          
+
             return turn;
         };
+
         return module;
     };
 })(angular);

@@ -1,6 +1,6 @@
 
-<div class="deck clearfix">
 
-    <comp-card class="card" ng-class="item.stat" ng-repeat="item in compDeck.deck track by $index" item-card="item"></comp-card>
+ <div class="clearfix container-fluid row " ng-repeat="item in compDeck.deck track by $index">
+    <comp-card class="card col" ng-class="item.stat" ng-repeat="item in compDeck.deck[$index] track by $index" item-card="item"></comp-card>
+ </div>
 
-</div>

@@ -27,8 +27,8 @@
             $timeout(function () {
                 vm.deck = vm.flop(vm.deck);
                 dckturn.length = 0;
-               // soundFactory.playClocksound();
-            }, 6000);
+                soundFactory.playClocksound();
+            }, 8000);
         };
     }
 })(angular)

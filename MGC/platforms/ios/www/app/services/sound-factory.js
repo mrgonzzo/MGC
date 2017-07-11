@@ -7,13 +7,17 @@
         var applause = new Audio('app/resources/applause.mp3');
         var fireworks = new Audio('app/resources/fw.mp3');
         module.playApplause = function () {
-			if (!applause.paused) {
+            if (!applause.paused) {
                applause.pause();
                 applause.currentTime=0;
             }
             applause.play();
         };
         module.playClocksound = function () {
+            if (!clocksound.paused) {
+               clocksound.pause();
+                clocksound.currentTime=0;
+            }
             clocksound.play();
             clocksound.loop = true;
         };
