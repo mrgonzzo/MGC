@@ -43,8 +43,11 @@
                 $timeout(function () {
                     vm.solveDuo(turn);
                     if (scoreCard[0] === 6) {
+                        $timeout(function(){
                         soundFactory.pauseClocksound();
+                        soundFactory.pauseApplause();
                         $state.go('win');
+                        },2000)
                     }
                 }, 500);
 

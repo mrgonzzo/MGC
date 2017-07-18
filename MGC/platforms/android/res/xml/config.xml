@@ -20,5 +20,8 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
+    <icon density="mdpi" src="res/mipmap-mdpi/gicon.png" />
+    <icon density="hdpi" src="res/mipmap-hdpi/gicon.png" />
+    <icon density="xhdpi" src="res/mipmap-xhdpi/gicon.png" />
     <preference name="loglevel" value="DEBUG" />
 </widget>

@@ -16,13 +16,18 @@
       url: '/aboutus',
       template: '<comp-aboutus></comp-aboutus>'
     };
-    
+    var play = {
+      name: 'play',
+      url: '/play',
+      template: '<comp-play></comp-play>'
+    };
     var win = {
       name: 'win',
       url: '/win',
       template: '<comp-win></comp-win>'
     };
     $stateProvider.state(main);
+    $stateProvider.state(play);
     $stateProvider.state(about);
     $stateProvider.state(win);
     $urlRouterProvider.otherwise('/main');

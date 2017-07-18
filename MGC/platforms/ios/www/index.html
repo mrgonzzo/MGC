@@ -7,11 +7,12 @@
     <title>Wikicountry - Angular</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
- <link href="app/styles/bootstrap.min.css" rel="stylesheet">
- <link href="app/styles/normalize.css" rel="stylesheet">
+    <link href="app/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="app/styles/normalize.css" rel="stylesheet">
+    <link href="app/styles/app.css" rel="stylesheet">
     <meta name="theme-color" content="#637082">
-    <link rel="stylesheet" href="app/styles/app.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body ng-app="app" ng-strict-di>
@@ -22,22 +23,23 @@
     <script src="app/services/card-factory.js"></script>
     <script src="app/services/score-factory.js"></script>
     <script src="app/services/sound-factory.js"></script>
-    
+
     <script src="app/components/commons/header/header.js"></script>
     <script src="app/components/commons/footer/footer.js"></script>
     <script src="app/components/main-view/mainview.js"></script>
     <script src="app/components/aboutus/aboutus.js"></script>
+    <script src="app/components/play/play.js"></script>
     <script src="app/components/play/card/card.js"></script>
     <script src="app/components/play/deck/deck.js"></script>
     <script src="app/components/play/counter/counter.js"></script>
     <script src="app/components/win/win.js"></script>
     <!-- Put your HTML code here -->
-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="vendor/bootstrap.min.js"></script>
     <comp-header></comp-header>
-    <ui-view ></ui-view>
+    <ui-view></ui-view>
     <comp-footer></comp-footer>
 
 </body>

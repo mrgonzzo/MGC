@@ -4,14 +4,18 @@
     // otra opción es poner aquí directamente el html asignándoselo a template:
     templateUrl:  'app/components/commons/header/header.html',
     // en controller definimos la función que escribimos abajo
-   controller: ['$state',controllerCompHeader],
+   controller: ['$state','scoreFactory','cardFactory','soundFactory',controllerCompHeader],
     // declaramos un alias para no tener que usar $ctrl.
    controllerAs: 'compHeader'
 });
 
-function controllerCompHeader ($state){
+function controllerCompHeader ($state,scoreFactory,cardFactory, soundFactory){
   var vm = this;
+ 
   vm.goToMain=function(){
+    soundFactory.resetSound();
+    cardFactory.resetTurn();
+    scoreFactory.resetScore();
     $state.go('main');
   }
 }

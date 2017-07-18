@@ -51,18 +51,21 @@
                 for (var j = 0; j < 4; j++) {
                     deck[i].push(cardarray[k]);
                     k = k + 1;
-                  
+
                 }
-             
+
             }
-           
+
             return deck;
         };
         module.getTurn = function () {
 
             return turn;
         };
-
+        module.resetTurn = function(){
+            turn = ['f', 'f'];
+            return turn;
+        }
         return module;
     };
 })(angular);
