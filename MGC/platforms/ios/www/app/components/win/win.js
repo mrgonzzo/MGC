@@ -18,7 +18,7 @@
     vm.goToPlay = function () {
       cardFactory.resetTurn();
       scoreFactory.resetScore();
-      soundFactory.pauseFireworks();
+      soundFactory.resetFireworks();
       $state.go('play');
     }
     vm.goToMain = function () {

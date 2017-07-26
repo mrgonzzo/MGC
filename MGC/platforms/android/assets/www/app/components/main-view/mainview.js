@@ -17,8 +17,7 @@
     };
     vm.sMute = function () {
       soundFactory.soundMute();
-      
-     }
+      }
   }
 
 })(angular)

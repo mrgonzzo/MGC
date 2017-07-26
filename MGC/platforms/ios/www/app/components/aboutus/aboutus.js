@@ -11,7 +11,7 @@
 
   function controllerCompAboutus($state,scoreFactory,cardFactory, soundFactory) {
     var vm = this;
-    soundFactory.pauseClocksound();
+    soundFactory.resetSound();
     vm.goToPlay = function () { 
       cardFactory.resetTurn();
       scoreFactory.resetScore();

@@ -44,10 +44,10 @@
                     vm.solveDuo(turn);
                     if (scoreCard[0] === 6) {
                         $timeout(function(){
-                        soundFactory.pauseClocksound();
-                        soundFactory.pauseApplause();
+                        soundFactory.resetClocksound();
+                        soundFactory.resetApplause();
                         $state.go('win');
-                        },2000)
+                        },1000)
                     }
                 }, 500);
 
