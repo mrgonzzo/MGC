@@ -25,11 +25,13 @@
 
         vm.$onInit = function () {
             vm.deck = angular.copy(cardFactory.getDeck());
+            
             timer = $timeout(function () {
                 vm.deck = vm.flop(vm.deck);
                 dckturn.length = 0;
 
             }, 6000);
+
             $scope.$on('$destroy', function () {
                 $timeout.cancel(timer);
             });

@@ -16,6 +16,7 @@
       
     vm.goToPlay = function () {
       soundFactory.resetClocksound();
+      soundFactory.resetApplause();
       cardFactory.resetTurn();
       scoreFactory.resetScore();
       $state.go('play', {}, { reload: true });

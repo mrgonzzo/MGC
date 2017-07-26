@@ -13,7 +13,7 @@ function controllerCompHeader ($state,scoreFactory,cardFactory, soundFactory){
   var vm = this;
  
   vm.goToMain=function(){
-    soundFactory.resetSound();
+    soundFactory.resetSoundmute();
     cardFactory.resetTurn();
     scoreFactory.resetScore();
     $state.go('main');
