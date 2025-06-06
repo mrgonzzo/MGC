@@ -1,4 +1,4 @@
-# MGC: Memory Game Card - AngularJS SPA
+# MGC: Mobile-Ready Memory Card Game with Angular & Cordova
 
 ![Framework](https://img.shields.io/badge/AngularJS-1.x-red)
 ![Mobile](https://img.shields.io/badge/Mobile-Cordova-blueviolet)
@@ -142,9 +142,7 @@ http://localhost:8080
 ```
 
 Alternatively, you can download and install the Android APK GonMGC.1.0.2.FinishVersion.apk for mobile fun from:
-```bash
 [https://drive.google.com/open?id=0B5VfUqfE2ujqOFVSSm1iU09iQTg](https://drive.google.com/file/d/0B5VfUqfE2ujqOFVSSm1iU09iQTg/view?usp=sharing&resourcekey=0-rF777piGb4Fa2Eee630FBg)
-```
 
 ---
 
