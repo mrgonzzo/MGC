@@ -80,6 +80,7 @@ MGC/
 ├── gulpfile.js                     # Gulp tasks (dev server, linting)
 ├── package.json                    # Node.js metadata and dependencies
 └── README.md                       # Project documentation
+```
 
 ---
 
@@ -106,14 +107,17 @@ MGC/
 ```bash
 git clone https://github.com/YOUR_USERNAME/MGC.git
 cd MGC
+```
 
 2. Install development dependencies (requires Node.js):
 ```bash
 npm install
+```
 
 3. (Optional) Run a development server with auto-reload using Gulp:
 ```bash
 gulp browserSync
+```
 
 ---
 
@@ -125,19 +129,22 @@ To run the game locally:
 1. Navigate to the project directory:
 ```bash
 cd src
+```
 
 2. Launch a basic server (requires http-server or similar tool):
 ```bash
 npx http-server
+```
 
 3. Open the game in your browser at:
 ```bash
 http://localhost:8080
-
+```
 
 Alternatively, you can download and install the Android APK GonMGC.1.0.2.FinishVersion.apk for mobile fun from:
 ```bash
 [https://drive.google.com/open?id=0B5VfUqfE2ujqOFVSSm1iU09iQTg](https://drive.google.com/file/d/0B5VfUqfE2ujqOFVSSm1iU09iQTg/view?usp=sharing&resourcekey=0-rF777piGb4Fa2Eee630FBg)
+```
 
 ---
 
