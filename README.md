@@ -154,7 +154,7 @@ Whether you're improving it, forking it, or simply playing it, enjoy the experie
 
 You can send comments or feedback to mr.gonzzo@gmail.com. 
 
-**If you’ve found this project useful or inspiring — feel free to build on it, break it, or just drop a star 🌟.**
+**If you’ve found this project useful or inspiring — feel free to build on it, break it, or just drop a star.**
 
 
 
